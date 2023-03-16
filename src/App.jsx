@@ -6,7 +6,7 @@ import Gallery from './Components/Gallery';
 
 
 function App() {
-  const ACCESS_KEY = process.env.VITE_APP_ACCESS_KEY;
+  const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
   const [inputs, setInputs] = useState({
     url: "",
     format: "",
